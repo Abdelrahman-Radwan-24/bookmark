@@ -1,0 +1,138 @@
+body {
+  background-color: #f7ecde;
+}
+
+::selection {
+  background-color: #fec260;
+}
+
+h1 {
+  font-size: 3.125rem;
+  font-family: "Pacifico", cursive;
+  font-weight: 500;
+  color: #352e28;
+  line-height: 3.75rem;
+  padding-block: 0.5rem;
+  position: relative;
+  display: inline-block;
+}
+
+h1::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 25%;
+  background-color: #fec260;
+  left: 0;
+  bottom: 0.625rem;
+  z-index: -1;
+  transition: all 350ms ease;
+}
+
+h1:hover::before {
+  height: 50%;
+  background-color: #fec260;
+}
+
+.bookmark {
+  border-width: 2px 0;
+  border-style: dotted;
+  border-color: #352e28;
+}
+
+.bookmark h2 {
+  font-size: 1.5625rem;
+  line-height: 1.875rem;
+  font-weight: 500;
+  font-family: "Righteous", sans-serif;
+  background-image: linear-gradient(to right, #3ca55c, #b5ac49);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+label {
+  font-weight: 600;
+  line-height: 1.5rem;
+  font-family: "PT Sans Caption", sans-serif;
+  color: #212529;
+}
+
+.form-control:focus {
+  border-color: #d99c39;
+  box-shadow: 0 0 0 0.25rem #fec26055;
+}
+
+.submit {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: #d1512d;
+  --bs-btn-border-color: #d1512d;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #bb4120;
+  --bs-btn-hover-border-color: #a03315;
+}
+
+.btn-visit {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: #9eb23b;
+  --bs-btn-border-color: #9eb23b;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #8a9e23;
+  --bs-btn-hover-border-color: #6e8018;
+  font-family: "PT Sans Caption", sans-serif;
+}
+
+.btn-delete {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: #eb1d36;
+  --bs-btn-border-color: #eb1d36;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #d30820;
+  --bs-btn-hover-border-color: #ba081d;
+  font-family: "PT Sans Caption", sans-serif;
+}
+
+.bg-style {
+  background-color: #0007;
+}
+
+.circles span {
+  display: block;
+  width: 20px;
+  height: 20px;
+}
+
+.circles span:nth-child(1) {
+  background-color: #f15f5d;
+}
+.circles span:nth-child(2) {
+  background-color: #febe2e;
+}
+.circles span:nth-child(3) {
+  background-color: #4db748;
+}
+
+.box-alert {
+  width: 31.25rem;
+  z-index: 10;
+}
+
+ul li {
+  font-size: 18px;
+  padding-top: 10px;
+  font-size: 18px;
+  font-family: "PT Sans Caption", sans-serif;
+  line-height: 27px;
+  color: #212529;
+}
+ul li i {
+  color: #bb4120;
+}
+
+.title {
+  font-family: "Bree Serif", serif;
+  font-size: 21px;
+  line-height: 1.7063rem;
+  color: #352e28;
+  margin: 0;
+  padding-bottom: .625rem;
+}
